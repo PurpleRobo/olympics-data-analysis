@@ -83,8 +83,9 @@ top_df['Golden_Ratio'] = (top_df['Gold_Total'] /
 
 top_max = top_df[top_df['Golden_Ratio'] ==
                        top_df['Golden_Ratio'].max()]
-top_max_ratio = 0.40
-top_country_gold = 'China'
+
+top_max_ratio = round(top_max['Golden_Ratio'], 2)
+top_country_gold = str(top_max['Country_Name'])
 
 
 # Best in the world 
